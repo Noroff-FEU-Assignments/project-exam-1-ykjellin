@@ -1,0 +1,147 @@
+.posts-section {
+  display: flex;
+}
+
+#posts-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow-y: scroll;
+  max-height: 90vh;
+  max-width: 200vh;
+  background-color: var(--primary-color);
+}
+
+.post {
+  flex: 1 1 calc(50% - 20px);
+  margin: 3vh;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background: var(--background-color);
+  max-width: 60vh;
+  min-height: 30vh;
+  color: #fff;
+}
+
+.read-more {
+  font-size: 22px;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.post-content img {
+  width: 100%;
+  height: 100%;
+}
+
+.thumbnail {
+  width: 25vh;
+  height: auto;
+  padding: 2vh;
+}
+
+.contentExcerpt {
+  font-size: 20px;
+  font-weight: 400;
+  padding-top: 2vh;
+}
+
+.carousel-container {
+  background-color: var(--background-color);
+}
+
+.carousel {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.carousel h2 {
+  padding: 20px;
+  color: #fff;
+}
+
+.carouselUl {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.carouselUl li {
+  text-align: center;
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+}
+
+.carouselUl li[data-active] {
+  opacity: 1;
+}
+
+.carouselUl img {
+  min-width: 60vh;
+  min-height: auto;
+}
+
+.carousel button {
+  position: absolute;
+  background: none;
+  border: none;
+  font-size: 4rem;
+  top: 50%;
+  z-index: 2;
+  transform: translateY(-50%);
+  cursor: pointer;
+  border-radius: 0.25rem;
+  padding: 0 0.5rem;
+  background-color: var(--background-button-color);
+}
+
+.carousel button:hover,
+.carousel button:focus {
+  color: var(--primary-color);
+  background-color: rgba(44, 44, 44, 0.8);
+}
+
+.carousel button:focus {
+  outline: 1px solid black;
+}
+
+#prevButton {
+  left: 1rem;
+}
+
+#nextButton {
+  right: 1rem;
+}
+
+#post-content {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: var(--background-color);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#post-content h1 {
+  font-size: 24px;
+  color: #fff;
+}
+
+#post-content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+#post-content div {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #fff;
+  opacity: 0.8;
+}
+
+#post-content div img:first-of-type {
+  display: none;
+}
